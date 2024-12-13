@@ -10,27 +10,23 @@
     <?php wp_head() ?>
 </head>
 
-<body <?php body_class('flex flex-col') ?> >
+<body <?php body_class() ?> >
     <?php wp_body_open(); ?>
 
     <header class="px-4">
         <div class="flex max-w-screen-xl mx-auto h-[70px]">
             <div class="flex-none  pl-1">
-                <a class="relative z-2" href="<?php echo home_url() ?>">
-                    <img class="logo h-[60px]" src="<?= get_template_directory_uri() ?>/assets/img/logo.svg"
-                        alt="logo" />
+                
                         <?php the_custom_logo ()?>
-                </a>
+            
             </div>
             <div id="menu" class="flex-1 pt-1">
-                <button class="menu-icon block md:hidden mt-6" onclick="jQuery('#menu').toggleClass('open')"></button>
+                
                 <div id="menu-items" class="pt-5 hidden md:block text-center">
                     <?= wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                 </div>
             </div>
-            <div class="flex-none pt-2" id="search-container">
-                
-            </div>
+
         </div>
     </header>
 

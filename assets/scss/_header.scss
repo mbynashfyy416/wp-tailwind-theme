@@ -1,4 +1,17 @@
 body {
     direction: rtl;
+    display: flex;
+    gap: 30;
+    font-family: Peyda;
 }
-
+.menu{
+    display: flex;
+    gap: 30px;
+}
+header{
+    position:fixed ;
+    background-color: rgba(250,250,250,.7);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    z-index: 10px;
+}

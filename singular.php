@@ -11,7 +11,6 @@ if (have_posts()): ?>
                 <div class="date w-40 text-left pt-6 fs-12 fw-700">
                     <?= get_the_date() ?>
                 </div>
-
             </div>
             <div class="article-content inst-context text-justify">
                 <?php the_content() ?>

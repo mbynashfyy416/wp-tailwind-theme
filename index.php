@@ -56,10 +56,5 @@ $categories = get_categories(["hide_empty" => 0]);
 </div>
 
 
-<!--error when starting dev server:
-Error: Port 3000 is already in use
-    at Server.onError (file:///C:/xampp/htdocs/wordpress/wp-content/themes/hodcode/node_modules/vite/dist/node/chunks/dep-b2890f90.js:54817:28)
-    at Server.emit (node:events:514:28)
-    at emitErrorNT (node:net:1899:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
 <?php get_footer() ?>
